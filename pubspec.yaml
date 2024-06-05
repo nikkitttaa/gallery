@@ -1,0 +1,86 @@
+name: gallery
+description: "Gallery"
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: ./core
+
+  domain:
+    path: ./domain
+
+  data:
+    path: ./data
+
+  cupertino_icons: ^1.0.2
+  auto_route: ^7.8.4
+  intl: ^0.18.1
+  flutter_bloc: ^8.1.5
+  flutter_secure_storage: ^4.2.1
+  freezed: ^2.5.2
+  freezed_annotation: ^2.4.1
+  image_picker: ^1.1.1
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  mask_text_input_formatter: ^2.9.0
+
+dev_dependencies:
+  flutter_native_splash: any
+  build_runner: ^2.4.9
+  auto_route_generator: ^7.3.2
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/icons/action.png
+    - assets/icons/back.png
+    - assets/icons/calendar.png
+    - assets/icons/camera.png
+    - assets/icons/error.png
+    - assets/icons/eye_off.png
+    - assets/icons/eye_on.png
+    - assets/icons/home.png
+    - assets/icons/mail.png
+    - assets/icons/next.png
+    - assets/icons/person.png
+    - assets/icons/phone.png
+    - assets/icons/profile.png
+    - assets/icons/search.png
+    - assets/icons/settings.png
+    - assets/images/logo.png
+    - assets/images/error_logo.png
+
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto.ttf
+
+
+
+flutter_native_splash:
+  image: assets/images/logo.png
+  color: "42a5f5"
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalization
+  main_locale: ru
